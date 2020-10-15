@@ -5,13 +5,13 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import { CssBaseline } from '@material-ui/core';
 
-import Store from 'store'
+import configureStore from '@/store'
 
-import { SignIn } from 'pages/SignIn';
-import { Dashboard } from 'pages/Dashboard';
-import { AuthRoute } from 'components/AuthRoute';
+import { SignIn } from '@/pages/SignIn';
+import { Dashboard } from '@/pages/Dashboard';
+import { AuthRoute } from '@/components/AuthRoute';
 
-const store = Store()
+const store = configureStore()
 
 const App = () => {
 

@@ -7,13 +7,10 @@
     "jsx": "react",
     "outDir": "dist",
     "rootDir": "src",
-    "baseUrl": "src",
+    "baseUrl": "./",
     "lib": ["es6", "dom"],
     "paths": {
-      "components/*": ["components/*"],
-      "pages/*": ["pages/*"],
-      "utils/*": ["utils/*"],
-      "store/*": ["store/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src"],

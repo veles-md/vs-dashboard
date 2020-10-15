@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Route, Switch, Link, useRouteMatch } from 'react-router-dom';
 
+import { ApplicationBar } from '@/components/ApplicationBar';
 
-import { ApplicationBar } from 'components/ApplicationBar';
 
 const Settings = () => <div>Settings</div>
 const Home = () => <div>Dashboard Home</div>

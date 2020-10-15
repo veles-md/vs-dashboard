@@ -2,7 +2,9 @@
   "name": "vs-dashboard",
   "version": "1.0.0",
   "description": "Veles Services - Dashboard",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/veles-md/vs-dashboard.git"

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch, Link, useRouteMatch } from 'react-router-dom';
 
 
-import { Toolbar } from 'components/Toolbar';
+import { ApplicationBar } from 'components/ApplicationBar';
 
 const Settings = () => <div>Settings</div>
 const Home = () => <div>Dashboard Home</div>
@@ -12,7 +12,7 @@ export const Dashboard = () => {
     console.log(`${url}`)
     return (
         <div>
-            <Toolbar />
+            <ApplicationBar />
             <div>
                 <h2>Dashboard page</h2>
                 <Link to={`${url}`}>Dashboard home</Link>

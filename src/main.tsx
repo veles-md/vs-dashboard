@@ -1,7 +1,9 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
-import { SignInPage } from './pages/sign-in.page';
+
+import { SignInPage } from 'pages/sign-in.page';
 
 const App = () => {
     return (

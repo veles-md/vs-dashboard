@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Veles Services - Dashboard",
   "scripts": {
-    "build": "webpack serve --config webpack.dev.ts"
+    "start": "webpack serve --config webpack.dev.ts",
+    "build": "webpack --config webpack.dev.ts --mode production"
   },
   "repository": {
     "type": "git",

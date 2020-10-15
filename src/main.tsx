@@ -1,25 +1,31 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CssBaseline } from '@material-ui/core';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
+import { CssBaseline } from '@material-ui/core';
+
+import Store from 'store'
 
 import { SignIn } from 'pages/SignIn';
 import { Dashboard } from 'pages/Dashboard';
 import { AuthRoute } from 'components/AuthRoute';
 
+const store = Store()
 
 const App = () => {
 
 
     return (
-        <Router>
-            <CssBaseline />
-            <Switch>
-                <Route path="/sign-in" component={SignIn} />
-                <AuthRoute path="/" component={Dashboard} />
-            </Switch>
-        </Router>
+        <Provider store={store}>
+            <Router>
+                <CssBaseline />
+                <Switch>
+                    <Route path="/sign-in" component={SignIn} />
+                    <AuthRoute path="/" component={Dashboard} />
+                </Switch>
+            </Router>
+        </Provider>
     )
 }
 

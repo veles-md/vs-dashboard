@@ -3,8 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Link, Route, Switch, } from 'react-router-dom';
 
-import { SignInPage } from 'components/sign-in';
-import { DashboardPage } from 'components/dashboard';
+import { SignInPage } from 'components/pages/sign-in';
+import { DashboardPage } from 'components/pages/dashboard';
+import { AuthRoute } from 'components/shared/AuthRoute';
 
 const App = () => {
     return (
@@ -12,7 +13,7 @@ const App = () => {
             <Link to="/">Dashboard</Link>
             <Link to="/sign-in">Sign-In</Link>
             <Switch>
-                <Route exact path="/" component={DashboardPage} />
+                <AuthRoute exact path="/" component={DashboardPage} />
                 <Route path="/sign-in" component={SignInPage} />
             </Switch>
         </Router>

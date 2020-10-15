@@ -10,7 +10,6 @@ const Home = () => <div>Dashboard Home page</div>
 
 export const Dashboard = () => {
     const { path, url } = useRouteMatch();
-    console.log(`${url}`)
     return (
         <div>
             <ApplicationBar />

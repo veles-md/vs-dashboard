@@ -14,8 +14,6 @@ import { AuthRoute } from '@/components/AuthRoute';
 const store = configureStore()
 
 const App = () => {
-
-
     return (
         <Provider store={store}>
             <Router>

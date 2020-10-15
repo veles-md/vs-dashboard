@@ -6,7 +6,7 @@ import { ApplicationBar } from '@/components/ApplicationBar';
 
 
 const Settings = () => <div>Settings</div>
-const Home = () => <div>Dashboard Home</div>
+const Home = () => <div>Dashboard Home page</div>
 
 export const Dashboard = () => {
     const { path, url } = useRouteMatch();

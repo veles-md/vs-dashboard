@@ -5,6 +5,7 @@ import HtmlWebPackPlugin from "html-webpack-plugin";
 interface WebpackConfig extends Configuration {
   devServer: {
     historyApiFallback: boolean;
+    hot: boolean;
     port: number;
   };
 }
@@ -16,6 +17,7 @@ const config: WebpackConfig = {
   devServer: {
     historyApiFallback: true,
     port: 8080,
+    hot: true,
   },
   output: {
     path: path.resolve(__dirname, "dist"),

@@ -7,8 +7,6 @@ import { compose } from "redux";
 
 import { rootEpic, rootReducer } from "./modules/root";
 
-const initialState = {};
-
 const composeEnhancers =
   (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const epicMiddleware = createEpicMiddleware();
@@ -16,7 +14,6 @@ const epicMiddleware = createEpicMiddleware();
 export default function configureStore() {
   const store: Store = createStore(
     rootReducer,
-    initialState,
     composeEnhancers(applyMiddleware(epicMiddleware))
   );
   epicMiddleware.run(hotReloadingEpic);

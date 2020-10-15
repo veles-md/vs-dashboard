@@ -6,7 +6,7 @@ type TAuthRoute = {
 } & RouteProps;
 
 export const AuthRoute = ({ component: Component, path }: TAuthRoute) => {
-    if (true) {
+    if (false) {
         return <Redirect to="/sign-in" />;
     }
 

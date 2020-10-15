@@ -1,6 +1,17 @@
 import React from 'react';
-import { Toolbar as MatToolbar } from '@material-ui/core';
+import { AppBar, IconButton, Toolbar as MatToolbar } from '@material-ui/core';
+import { MenuOutlined } from '@material-ui/icons';
+
 
 export const Toolbar = () => {
-    return <div>Toolbar</div>
+    return <React.Fragment>
+        <AppBar position="fixed">
+            <MatToolbar>
+                <IconButton color="inherit">
+                    <MenuOutlined />
+                </IconButton>
+            </MatToolbar>
+        </AppBar>
+        <MatToolbar />
+    </React.Fragment >
 }

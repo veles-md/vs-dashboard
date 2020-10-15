@@ -25,6 +25,7 @@ const config: WebpackConfig = {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
     alias: {
       components: path.resolve(__dirname, "src", "components"),
+      pages: path.resolve(__dirname, "src", "pages"),
     },
   },
   module: {

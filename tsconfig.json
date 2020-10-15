@@ -10,7 +10,8 @@
     "baseUrl": "src",
     "lib": ["es6", "dom"],
     "paths": {
-      "components/*": ["components/*"]
+      "components/*": ["components/*"],
+      "pages/*": ["pages/*"]
     }
   },
   "include": ["src"],

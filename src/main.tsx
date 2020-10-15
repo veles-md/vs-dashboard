@@ -15,8 +15,8 @@ const App = () => {
             <Link to="/">Dashboard</Link>
             <Link to="/sign-in">Sign-In</Link>
             <Switch>
-                <AuthRoute exact path="/" component={Dashboard} />
                 <Route path="/sign-in" component={SignIn} />
+                <AuthRoute path="/" component={Dashboard} />
             </Switch>
         </Router>
     )

@@ -34,12 +34,6 @@ const config: WebpackConfig = {
         loader: "awesome-typescript-loader",
         exclude: /node_modules/,
       },
-      {
-        test: /\.m?js/,
-        resolve: {
-          fullySpecified: false,
-        },
-      },
     ],
   },
   plugins: [
